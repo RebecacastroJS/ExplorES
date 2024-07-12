@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1em;
+    align-content: center;
+    
+}
+.nav-links li.fondode {
+    margin: 0 1em;
+    height: 100px;
+    background-color: #46886eb8;
+    align-content: center;
+}
+
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links a:hover {
+  
+    border-radius: 4px;
+    color: black;
+}
+.btn-acceder {
+    background-color:#38a97c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px; /* Espacio entre botones */
+    justify-items: center;
+    border-radius: 10px;
+  }
+  
+  .btn-acceder:hover {
+    background-color:#00a1ff;
+    border-radius: 10px;
+  }
+
+header {
+    background-color:white;
+    padding: 5;
+    margin: 0;
+    text-align: center;
+}
+
+.menuham {
+    padding: 0;
+    height: 115px;
+}
+
+footer {
+    background-color: #3F6A59;
+    color: white;
+    text-align: right;
+    padding: 15px;
+    width: auto;
+}
+
+hr {
+    border: none; /* Quita el borde predeterminado */
+    border-top: 1px solid black; /* Establece el color y el grosor de la línea */
+    margin: 25px auto; /* Ajusta el margen para centrar la línea */
+    width: 15%; /* Establece el ancho de la línea */
+    align-items: center;
+}
+
+.navbar {
+    margin-top: -20px; /* Elimina el margen superior */
+    padding-top: 0; /* Elimina el relleno superior */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3F6A59;
+    padding: auto;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        background-color: #3F6A59;
+        position: absolute;
+        top: 100px; /* Ajustar según la altura del navbar */
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+    }
+}
+
+.favicon{
+    height: 100px; /* Altura fija de 26px para el ícono */
+    display: flex; /* Usar flexbox para alinear elementos */
+    padding: 0px; /* Espacio interior de 10px alrededor del ícono */
+    padding-left: 25px;
+    
+}
+
+.menuham{
+    width: auto;
+}
+
+.movable:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+
+.Instagram {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.boton {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3F6A59;
+    color: white;
+    text-align: center;
+}
+
+.form1 {
+    border-color: black;
+}
+
+.welcome {
+    width: 1000px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.logo1 {
+    height: 75px;
+    margin-right: 300px;
+}
+
+.slogan {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: auto;
+}
+
+.titulo {
+    font-size: 40px;
+    color: #3F6A59;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.who {
+    color: #3F6A59;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.texto {
+    color: black;
+    text-align: justify;
+}
+
+.text-box p {
+    line-height: 1.6;
+}
+
+.playacon {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.playacon img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    height: auto;
+    border-radius: 80px;
+    width: 930px;
+}
+
+.misión {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 25px;
+}
+
+.container img {
+    display: block; /* Para evitar espacios adicionales debajo de la imagen */
+    margin: 0 auto 10px; /* Centra la imagen horizontalmente y agrega espacio inferior */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+        
+}
+
+.logo-img {
+    height: 30px;
+}
+
+.text-box1 {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #000;
+    display: flex;
+}
+
+.mision {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.misionvision {
+    text-align: justify;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en líneas nuevas */
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+.imagenes img {
+    max-width: 100%; /* Ajustar el tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+    margin: 5px; /* Espacio entre imágenes */
+}
+
+@media (max-width: 600px) {
+    .imagenes img {
+        flex: 2 2 100%; /* En pantallas pequeñas, hacer que cada imagen ocupe el 100% del contenedor */
+    }
+}
+
+.rico {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 9px;
+    width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+    height: auto;
+}
+
+.text-box:hover {
+    transform: translateY(-15px);
+}
+
+.rico:hover > :not(:hover) {
+    opacity: 0.5;
+}
+
+
+.en{
+    color:#333;
+}
+
+.es{
+    color:#00a1ff;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background:#333;
+    border-radius: 25px;
+}
+
+.check:after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+
+}
+
+.check:checked:before{
+    background: #00a1ff;
+
+}
+
+
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html land="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta hhhtp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExplorES Destinations</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="favico1.png">
+  
+</head>
+<body>
+  <a href="#" onclick="goBack()"><span><img src="imagen_2024-06-20_215301165-removebg-preview.png" class="top-left-image"></span></a>
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+  <div class="container" id="main">
+    <div class="sign-up">
+      <form action="#">
+        <h1>Crear Cuenta</h1>
+        <div class="social-container">
+          <a href="#" class="social"><img src="https://cdn-icons-png.flaticon.com/512/2875/2875331.png" alt="Facebook"></a>
+          <a href="#" class="social"><img src="https://images.vexels.com/content/223136/preview/facebook-icon-social-media-8dfafe.png" alt="Google Plus"></a>
+          <a href="#" class="social"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIrV0K2EY9liWXEl-BHin6iRNAIhzwzXSNw&s" alt="LinkedIn"></a>
+        </div>
+        
+        <p>o usa tu correo electrónico para registrarte</p>
+        <input type="text" name="txt" placeholder="Name" required="">
+        <input type="email" name="email" placeholder="Email" required="">
+        <input type="password" name="pswd" placeholder="Password" required="">
+        <button style="color: white;">Regístrate</button>
+
+      </form>
+
+    </div>
+    <div class="sign-in">
+      <form action="#">
+        <h1>Iniciar Sesión</h1>
+        <div class="social-container">
+          <a href="#" class="social"><img src="https://cdn-icons-png.flaticon.com/512/2875/2875331.png" alt="Facebook"></a>
+          <a href="#" class="social"><img src="https://images.vexels.com/content/223136/preview/facebook-icon-social-media-8dfafe.png" alt="Google Plus"></a>
+          <a href="#" class="social"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIrV0K2EY9liWXEl-BHin6iRNAIhzwzXSNw&s" alt="LinkedIn"></a>
+        </div>
+        <p>o usa tu cuenta</p>
+        <input type="email" name="email" placeholder="Email" required="">
+        <input type="password" name="pswd" placeholder="Password" required="">
+        <a href="#">¿Olvidastes tu contraseña?</a>
+        <button style="color: white;">Iniciar Sesión</button>
+      </form>
+
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-left">
+          <h1>¡Bienvenido de Nuevo!</h1>
+          <p>Para seguir en contacto con nosotros, inicie sesión con sus datos personales</p>
+          <button id="signIn" style="color: white;">Iniciar Sesión</button>
+        </div>
+        <div class="overlay-right">
+          <h1>¡Hola, Amigo!</h1>
+          <p>Introduzca sus datos personales y empiece a viajar con nosotros</p>
+          <button id="signUp" style="color: white;">Regístrate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    const signUpButton = document.getElementById('signUp')
+    const signInButton = document.getElementById('signIn')
+    const main = document.getElementById('main')
+
+    signUpButton.addEventListener('click', ()=>{
+      main.classList.add("right-panel-active");
+    });
+    signInButton.addEventListener('click', ()=>{
+      main.classList.remove("right-panel-active");
+    });
+
+  </script>
+</body>
+
+</html>

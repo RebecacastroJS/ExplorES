@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+
+.logo{
+    height: 70px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.texto{
+    color: black;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.back{
+    justify-content: left;
+}

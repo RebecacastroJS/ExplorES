@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExplorES Destinations</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="favico1.png">
+</head>
+
+<body>
+  <a href="#" onclick="goBack()"><span><img src="imagen_2024-06-20_215301165-removebg-preview.png" class="top-left-image"></span></a>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+  
+  <div class="container" id="main">
+    <div class="sign-up">
+      <form action="registro_usuario_be.php" method="POST">
+        <h1>Create Account</h1>
+        <p>or use your email for registration</p>
+        <input type="text" placeholder="Name" required="" name="nombre">
+        <input type="email" placeholder="Email" required="" name="correo">
+        <input type="password" placeholder="Password" required="" name="contrasena">
+        <button style="color: white;">Sign Up</button>
+      </form>
+    </div>
+    
+    <div class="sign-in">
+      <form action="#">
+        <h1>Sign In</h1>
+        <div class="social-container">
+          <a href="#" class="social"><img src="https://cdn-icons-png.flaticon.com/512/2875/2875331.png" alt="Facebook"></a>
+          <a href="#" class="social"><img src="https://images.vexels.com/content/223136/preview/facebook-icon-social-media-8dfafe.png" alt="Google Plus"></a>
+          <a href="#" class="social"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIrV0K2EY9liWXEl-BHin6iRNAIhzwzXSNw&s" alt="LinkedIn"></a>
+        </div>
+        <p>or use your account</p>
+        <input type="email" name="email" placeholder="Email" required="">
+        <input type="password" name="pswd" placeholder="Password" required="">
+        <a href="#">Forget your password?</a>
+        <button style="color: white;">Sign In</button>
+      </form>
+    </div>
+    
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-left">
+          <h1>Welcome Back</h1>
+          <p>To keep connected with us please login with your personal information</p>
+          <button id="signIn" style="color: white;">Sign In</button>
+        </div>
+        <div class="overlay-right">
+          <h1>Hello, Friend</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button id="signUp" style="color: white;">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const main = document.getElementById('main');
+
+    signUpButton.addEventListener('click', () => {
+      main.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+      main.classList.remove("right-panel-active");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html land="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta hhhtp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExplorES Destinations</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="icon" href="favico1.png">
+  
+</head>
+<body>
+  <a href="#" onclick="goBack()"><span><img src="imagen_2024-06-20_215301165-removebg-preview.png" class="top-left-image"></span></a>
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<h1 class="profiletittle">Profile</h1>
+<h4 class="tittle">Explore with your personal guide</h4>
+<div class="imagenes"><br>
+    <img src="random.png" alt="random1" class="rando" style="max-width: 100%;
+          height: auto;">
+    <img src="random2.png" alt="random2" class="rando" style="max-width: 100%;
+          height: auto;">
+  </div>
+  <div class="profile-container">
+    
+    <div class="profile-pic">
+        <img id="profileImage" src="default-profile.png" alt="Foto de perfil">
+    </div>
+    <form id="profileForm">
+        <input type="file" id="fileInput" accept="image/*" hidden>
+        <button type="button" onclick="document.getElementById('fileInput').click();">Seleccionar Imagen</button>
+    </form>
+</div>
+<script src="script10.js"></script>
+<h1 class="username">Username</h1>
+<div class="linea-verde"></div>
+
+<div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+</div>
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+</div>
+</body>
